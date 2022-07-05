@@ -148,6 +148,9 @@ const compute = async (req, res) => {
   });
 };
 
+app.get("/", (req, res) => {
+  res.send("API Deployed Successfully");
+});
 // var splitType = "FLAT" ||  || "RATIO";
 app.post(
   "/split-payment/compute",
